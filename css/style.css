@@ -351,3 +351,57 @@ body, html {
     margin-top: 20px;
     max-width: 300px; 
   }
+
+
+
+
+
+
+
+
+
+  .assignments {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--clr-accent2);
+  }
+  
+  .section__title--assignments {
+    z-index: 2;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    font-size: var(--fs-h2);
+  }
+
+  .section__subtitle--assignments {
+    background-color: white;        /* Set background to white */
+    box-shadow: 0 4px 8px rgba(1, 1, 49, 0.5);  /* Deep blue shadow */
+    padding: 10px;                  /* Add padding to create space inside the box */
+    border-radius: 8px;    /* Optional: Make corners rounded */
+    margin-top: 80px;           
+    margin-bottom: 20px;            /* Add space between sections */
+}
+
+/* Optional: Style the text inside the section */
+.section__subtitle--assignments h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--clr-background);
+}
+
+.section__subtitle--assignments p {
+    font-size: 1em;
+    color: var(--clr-background);
+}
+
+.section__subtitle--assignments a {
+    text-decoration: none;
+    color: #1a73e8;                 /* Link color */
+}
