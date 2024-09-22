@@ -2,6 +2,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('Script loaded and running on the page');
     const glow = document.createElement('div');
     glow.classList.add('glowing-effect');
     document.body.appendChild(glow);
