@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJustin Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+</body>
+        
+<section class="assignments" >
+            
+    <h1 class="section__title section__title--assignments">
+        <strong>My Assignments</strong>
+    </h1>
+
+
+    <div class="section__subtitle--assignments">
+        <h2>Assignment 0: Test Dummy</h2>
+        <p class="assignment-description">
+            This assignment is for testing. Created a file called tasks that uses sys in python to get numbers form the command line. Then had to 
+            cast the arguments into ints as they are strings by defualt. Once they were casted I could add them together as integers and print the output.
+        </p>
+        <a href="https://github.com/JustinLiao122/assignment-0.git" target="_blank" class="assignment-link">Github Link</a>
+   
+        <h2>Assignment 1: Elevator Position</h2>
+        <p class="assignment-description">
+            This assignment I collected data for when the elevators opened in the CDS building. Then wrote small python scripts to read and reitrive/compute data to order to find the optimal place to stand to minimize the dsitance you need to walk.
+        </p>
+        <a href="https://github.com/JustinLiao122/Liaoju-assignment-1.git" target="_blank" class="assignment-link">Github Link</a>
+
+        <h2>Assignment 2: Kmeans Algorithm WebApp</h2>
+        <p class="assignment-description">
+            This assignment I developed a web app using flask for back-end development and javascript for front-end interaction with the web page. Which allows the user to put in inputs for k clusters and what type of method they want to use for initializing centriods. It also allows them to manually select the inital centriods.
+        </p>
+        <a href="https://github.com/JustinLiao122/Liaoju-assignment-2.git" target="_blank" class="assignment-link">Github Link</a>
+        <div class="section__demo--assignments">
+        <h4>Demo Video</h4>
+        <video width="640" height="480" controls>
+            <source src="KmeansDemo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        <h2>Assignment 3: SVD Implementation and Analyze</h2>
+        <p class="assignment-description">
+            This assignment I implemented SVD on each image in the mnist data base of numbers 0-9. And ploted the accuracy and Time certain amounts of SVD_components to retain. Then analyze the result. 
+        </p>
+        <a href="https://github.com/JustinLiao122/Liaoju-assignment-3.git" target="_blank" class="assignment-link">Github Link</a>
+        
+        <h2>Assignment 4: LSA Search Engine</h2>
+        <p class="assignment-description">
+            This assignment I developed a web app that uses the implmentation of LSA on a dataset of documents. A search engine that allows the user to type in key words and find related documents determined by cosine similariy.
+        </p>
+        <a href="https://github.com/JustinLiao122/Liaoju-assignment-4.git" target="_blank" class="assignment-link">Github Link</a>
+        <div class="section__demo--assignments">
+        <h4>Demo Video</h4>
+        <video width="740" height="480" controls>
+            <source src="LSADemo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
+        <h2>Assignment 5: KNN Bank Churn</h2>
+        <p class="assignment-description">
+            This assignment I implemented KNN from scratch and used the model to predit the churn of clients based on the provided data. I preprocessed the data by finding the corrilation between exit status and each feature. I also inflated the miniority class of exiting to balance the dataset.
+        </p>
+        <a href="https://github.com/JustinLiao122/Liaoju-assignment-5.git" target="_blank" class="assignment-link">Github Link</a>
+        <h2>Assignment MovieReview: MovieReview</h2>
+        <p class="assignment-description">
+            In this project, I developed a predictive model to determine Amazon review star ratings based on a variety of features, including text data processed with TF-IDF vectorization. I built a stacked ensemble model using Random Forest, LightGBM, and XGBoost, leveraging each model's strengths for improved accuracy. To optimize the model’s performance, I carefully tuned hyperparameters, experimented with feature engineering, and tested methods to handle class imbalance, including SMOTEENN and custom class weights. The final model achieved a 60% accuracy on unseen data, highlighting effective strategies for handling large, imbalanced datasets.
+        </p>
+        <a href="https://github.com/JustinLiao122/Movie_Reviews.git" target="_blank" class="assignment-link">Github Link</a>
+        <h2>Assignment 7: Linear Regression Simulations++</h2>
+        <p class="assignment-description">
+            For this website I included hypothesis testing and confidence intervals for linear regression. These tools allow users to test if an observed slope is statistically significant and to view a range within which the true slope likely falls, adding depth to the regression analysis.
+        </p>
+        <a href="https://github.com/JustinLiao122/Liaoju-assignment-7.git" target="_blank" class="assignment-link">Github Link</a>
+        <div class="section__demo--assignments">
+            <h4>Demo Video</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-tLypDB3tSA" frameborder="0" allowfullscreen></iframe>
+            </div>
+    </div>
+            
+        
+    
+        
+      
+           
+            <!--<img src="img/Bamboo.jpg" alt="Bamboo background" class="intro_img--back">-->
+            <nav class="navMenu">
+                <a href="/">About</a>
+                <a href="/hobbies">Hobbies</a>
+                <a href="/projects">Projects</a>
+                <a href="/work-experience">Work-experience</a>
+                <a href="/contact">Contact</a>
+                <a href="/assignments">Assignments</a>
+                <div class="dot"></div>
+            </nav>
+        
+        </section>
+        
+        <script src="../js/index.js"></script>
+    </body> 
+       
+</html>

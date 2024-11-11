@@ -1,0 +1,647 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-light: #095117;
+    --clr-dark: #303030;
+    --clr-accent: #00fbff;
+    --clr-accent2: #ffffff;
+    --clr-background:  #010131;
+    
+    --fs-h1: 6rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --fs-h4:2rem;
+    
+    --bs: 0.4em 0.4em 0.8em rgba(255, 104, 3, 0.575),
+          0.2em 0.2em 0.4em rgba(253, 114, 0, 0.837);
+}
+
+strong { font-weight: var(--fw-bold) }
+
+.glowing-effect {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:rgba(71, 71, 160, 0.304); /* Example: blue color */
+    box-shadow: 0 0 300px 300px rgba(71, 71, 160, 0.304); /* Adjust color and glow size */
+    pointer-events: none; /* Allows clicking through this element */
+    z-index: 1;
+}
+
+
+
+.logo {
+    max-width: 100px;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+h4{
+  color: rgb(0, 0, 0);
+  font-size: var(--fs-h3); /* match with h2 */
+}
+
+
+.navMenu {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 0 15px;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(135px);
+  transform: translateX(135px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(243px);
+  transform: translateX(243px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(363px);
+  transform: translateX(363px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*INtro */
+.intro {
+    
+    position: relative;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh;
+    background-color: var(--clr-background);
+    
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    color: var(--clr-accent2);
+    text-align: left;
+
+
+}
+
+.section__title--intro{
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    
+    padding: .25em 1em;
+    font-family: var(--ff-primary);
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+    font-size: var(--fs-h1);
+    
+}
+.section__subtitle--intro{
+    z-index: 2;
+    position: absolute;
+    top:36%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background: var(--clr-background);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    box-shadow: var(--bs);
+    border-radius: 10px; 
+}
+
+.intro__img {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; 
+  
+}
+
+  .aboutme {
+   
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--clr-background);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--clr-accent2);
+  }
+  
+  .section__title--aboutme {
+    z-index: 2;
+    width: 200px;
+    overflow: hidden;
+    margin-right: 300px;
+  }
+  .aboutme__body--aboutme {
+    z-index: 2;
+    max-width: 550px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-right: 70px;
+    padding-left: 8px;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    padding-top: 100px;
+  
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+   
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hobbies{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--clr-accent2);
+
+}
+
+
+
+.section__title--hobbies {
+    z-index: 2;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -50px;
+    font-size: var(--fs-h2);
+  }
+
+.section__subtitle--hobbies{
+    z-index: 2;
+    text-align: center; 
+     
+    margin-top: 0px; 
+    margin-bottom: -11px;
+    font-size: var(--fs-h3); 
+}
+
+.section__more--hobbies{
+    z-index: 2;
+    text-align:right; 
+     
+    margin-top: 0px; 
+    margin-bottom: -60px;
+    margin-left: 90%;
+}
+
+  .hobbies-scrollable {
+    z-index: 2;
+    display: flex;
+    overflow-x: auto;
+    gap: 40px;
+    padding: 20px;
+    width: calc(100% - 40px); 
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    align-items: flex-start;
+    margin-top: 70px;
+  }
+
+  .hobbies-scrollable::-webkit-scrollbar {
+    height: 8px; 
+  }
+  
+  .hobbies-scrollable::-webkit-scrollbar-track {
+    background: #e0e0e0; 
+  }
+  
+  .hobbies-scrollable::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px; 
+  }
+  
+  .hobby-block {
+    z-index: 2;
+    flex: 0 0 auto; 
+    text-align: center; 
+  }
+  
+  .hobby-block img {
+    z-index: 2;
+    min-height: 250px;
+    max-height: 250px;
+    max-width: 350px; 
+  }
+  
+  .hobby-block p {
+    z-index: 2;
+    margin-top: 20px;
+    max-width: 300px; 
+  }
+
+
+
+
+
+
+
+
+
+  .assignments {
+    position: relative;
+    min-height: 100vh;  
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--clr-accent2);
+    
+  }
+  
+  .section__title--assignments {
+    z-index: 2;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    font-size: var(--fs-h2);
+    z-index: 2;
+  }
+
+  .section__subtitle--assignments {
+    max-height: 70vh;            /* Set a maximum height */
+    overflow-y: auto;
+    background-color: white;        /* Set background to white */
+    box-shadow: 0 4px 8px rgba(1, 1, 49, 0.5);  /* Deep blue shadow */
+    padding: 10px;                  /* Add padding to create space inside the box */
+    border-radius: 8px;    /* Optional: Make corners rounded */
+    margin-top: 80px;           
+    margin-bottom: 20px;  
+    z-index: 2;          /* Add space between sections */
+}
+
+/* Optional: Style the text inside the section */
+.section__subtitle--assignments h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--clr-background);
+    z-index: 2;
+}
+
+.section__subtitle--assignments p {
+    font-size: 1em;
+    color: var(--clr-background);
+    z-index: 2;
+}
+
+.section__subtitle--assignments a {
+    text-decoration: none;
+    color: #1a73e8;   
+    z-index: 2;              /* Link color */
+}
+
+.section__demo--assignments {
+  text-align: center;
+
+}
+
+
+.contact{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--clr-accent2);
+
+}
+
+
+.icon-wheel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 300px;
+  z-index: 2;
+}
+
+.icon-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Wrapper to keep the icon and line together */
+.icon-line-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icon styling */
+.icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  font-size: 40px;
+  color: #333;
+  z-index: 2;
+}
+
+.icon:hover {
+  transform: scale(1.5); /* Enlarge icon on hover */
+}
+
+/* Line styling to make lines visible and connected from the icons */
+
+
+/* Positioning each icon container to form a circular layout */
+.instagram-container {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.instagram {
+  color: #E1306C; /* Instagram Pink */
+}
+
+.linkedin {
+  color: #0077B5; /* LinkedIn Blue */
+}
+
+.github {
+  color: #333; /* GitHub Black */
+}
+
+.gmail {
+  color: #D44638; /* WhatsApp Green */
+}
+
+.linkedin-container {
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.github-container {
+  top: 50%;
+  right: 10%;
+  transform: translate(50%, -50%);
+  
+}
+
+.phone-container {
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  
+}
+
+/* Label styling */
+.insta-label {
+  position: absolute;
+  top: 15%;
+  left: 480%;
+  font-size: 28px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+
+.insta-line {
+  position: absolute;
+  top: 35%;
+  left: 105%;
+  width: 300px; /* Line length */
+  height: 2px;
+  background-color: #e0e0e0; /* Position to the right edge of the icon */
+  transform: translate(0, -50%) rotate(0deg);
+  z-index: 1.5; /* Rotate line to go right */
+}
+
+.linkedin-label {
+  position: absolute;
+  top: 15%;
+  right: 480%;
+  font-size: 28px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+
+.linkedin-line {
+  position: absolute;
+  top: 35%;
+  right: 105%;
+  width: 300px; /* Line length */
+  height: 2px;
+  background-color: #e0e0e0; /* Position to the right edge of the icon */
+  transform: translate(0, -50%) rotate(0deg);
+  z-index: 1.5; /* Rotate line to go right */
+}
+.github-label {
+  position: absolute;
+  top: 15%;
+  left: 480%;
+  font-size: 28px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+
+.github-line {
+  position: absolute;
+  top: 35%;
+  left: 105%;
+  width: 300px; /* Line length */
+  height: 2px;
+  background-color: #e0e0e0; /* Position to the right edge of the icon */
+  transform: translate(0, -50%) rotate(0deg);
+  z-index: 1.5; /* Rotate line to go right */
+}
+
+.phone-label {
+  position: absolute;
+  top: 15%;
+  right: 480%;
+  font-size: 28px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+
+.phone-line {
+  position: absolute;
+  top: 35%;
+  right: 105%;
+  width: 300px; /* Line length */
+  height: 2px;
+  background-color: #e0e0e0; /* Position to the right edge of the icon */
+  transform: translate(0, -50%) rotate(0deg);
+  z-index: 1.5; /* Rotate line to go right */
+}
+
+/* Adjust lines to move with the scaled icons */
+.icon:hover + .insta-line {
+  transform: scale(1.5) translateX(20px); /* Move and scale line when icon is hovered */
+}
+
+.icon:hover + .insta-line + .insta-label {
+  transform: scale(1.5) translateX(87px); /* Move and scale label when icon is hovered */
+}
+
+.icon:hover + .github-line {
+  transform: scale(1.5) translateX(20px); /* Move and scale line when icon is hovered */
+}
+
+.icon:hover + .github-line + .github-label {
+  transform: scale(1.5) translateX(87px); /* Move and scale label when icon is hovered */
+}
+
+.icon:hover + .linkedin-line {
+  transform: scale(1.5) translateX(-20px); /* Move and scale line when icon is hovered */
+}
+
+.icon:hover + .linkedin-line + .linkedin-label {
+  transform: scale(1.5) translateX(-87px); /* Move and scale label when icon is hovered */
+}
+.icon:hover + .phone-line {
+  transform: scale(1.5) translateX(-20px); /* Move and scale line when icon is hovered */
+}
+
+.icon:hover + .phone-line + .phone-label {
+  transform: scale(1.5) translateX(-87px); /* Move and scale label when icon is hovered */
+}
